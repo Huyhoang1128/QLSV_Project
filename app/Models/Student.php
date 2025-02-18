@@ -13,5 +13,5 @@ class Student extends Model
     public function classroom(){
         return $this->belongsTo(Classroom::class, 'ClassRoomID', 'ClassRoomID');
     }
-    protected $fillable = ['StudentID','StudentName', 'StudentEmail', 'StudentGender', 'ClassroomID'];
+    protected $fillable = ['StudentID','StudentName', 'StudentEmail', 'StudentGender', 'ClassRoomID'];
 }
