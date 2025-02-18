@@ -30,7 +30,7 @@
                 @if ($student->StudentGender = 0)
                     Nam
                 @else
-                    NULL
+                    NU
                 @endif
             </div>
                 <a href="{{ route('students.index') }}" class="btn btn-secondary">Quay lai</a>
