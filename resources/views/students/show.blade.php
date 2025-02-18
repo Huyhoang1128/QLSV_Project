@@ -24,3 +24,18 @@
                 {{ $student->StudentEmail }}
             </div>
         </div>
+        <div class="row mb-4">
+            <label class="col-sm-2 col-label-form"><b>Gioi tinh</b></label>
+            <div class="col-sm-10">
+                @if ($student->StudentGender = 0)
+                    Nam
+                @else
+                    NULL
+                @endif
+            </div>
+                <a href="{{ route('students.index') }}" class="btn btn-secondary">Quay lai</a>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection('content')
