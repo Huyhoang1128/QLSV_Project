@@ -13,7 +13,8 @@ class StudentController extends Controller
         return view('students.index', ['students'=> Student::paginate(10)]);
     }
     public function create(){
-
+        $classrooms = DB::table('classrooms')->get();
+        return view('students.create', compact('classrooms'));
     }
     public function store(Request $request){
 
