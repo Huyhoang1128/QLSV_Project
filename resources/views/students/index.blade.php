@@ -39,7 +39,7 @@
                             <td>{{ $row->StudentName}}</td>
                             <td>{{ $row->StudentEmail}}</td>
                             <td>if ($row->StudentGender==0) Nam @else Nu @endif</td>
-                            <td>{{ $row->Classroom->ClassroomName}}</td>
+                            <td>{{ $row->Classroom->ClassRoomName}}</td>
                             <td>
                                 <form method="post" action="{{ route('students.destroy', $row->StudentID) }}">
                                     @csrf
